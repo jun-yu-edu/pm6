@@ -6,23 +6,27 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <style>
-    div {
-      width: 100px;
-      height: 100px;
+    .container {
+      display: flex;
+      height: 120px;
+      border: 1px solid brown;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .flex-item {
       border: 1px solid black;
-      border-radius: 30%;
-      padding: 10px 20px 30px 40px;
-      margin: 10px 20px 30px 40px;
-      background-color: violet;
-      box-sizing: border-box;
+      padding: 10px;
+      margin: 10px;
+      height: 20px;
     }
   </style>
 </head>
 
 <body>
-  <div>안에 내용이 들어감!</div>
-  <div>안에 내용이 들어감!</div>
-
+  <div class="container">`
+    <div class="flex-item">Hello</div>
+  </div>
 </body>
 
 </html>
